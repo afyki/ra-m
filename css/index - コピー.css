@@ -1,0 +1,337 @@
+/*ここからスマホ*/
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+header{
+  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6));
+  text-align: center;
+  background-color: #fff;
+  width: 100%;
+  height: 3vh;
+  position: fixed;
+  z-index: 1000;
+}
+
+
+.u_menu {
+  width: 100%;
+  height: 3vh;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  z-index:9999;
+}
+
+
+a{
+  text-decoration: none;
+}
+a img{
+  width: 60px;
+  height: 60px;
+}
+p{
+  font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  /* font-family: Helvetica, Arial, “hiragino kaku gothic pro”,meiryo,”ms pgothic”,sans-serif; */
+  font-weight: 400;
+}
+article{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+section{
+  width: 100%;
+  margin-right: auto;
+}
+#map{
+  height: 1000px;
+  width: 100%;
+  /* box-shadow:0px -8px 8px -1px #ccc inset; */
+}
+/* 奥行スクロール ******************************/
+.container {
+  overflow: hidden;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.bg {
+  width: 200%;
+  height: 200%;
+  background-size: cover;
+  transform: translate3d(-25%, -5%, -100px);
+}
+/* .contents {
+position: relative;
+transform: translate3d(0, 0, 0);
+} */
+/*********************************************/
+.shop {
+  position: absolute;
+  top: 6%;
+  left: 25%;
+  width: 50%;
+  height: 3vh;
+  background-color: #fff;
+  border-radius: 20px;
+  filter: drop-shadow(0px 2px 5px rgba(0,0,0,0.6));
+}
+.shop a{
+  position: relative;
+  top: 20%;
+  height: 2vh;
+  padding: 5%;
+  padding-left: 33%;
+  padding-right: 25%;
+  font-size: 1.7rem;
+  color: #0b41b9;
+}
+.shop:before {
+  content: "";
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  margin-left: -15px;
+  border: 20px solid transparent;
+  border-top: 20px solid #fff;
+}
+
+main{
+  position: absolute;
+  top: 960px;
+  padding-top: 300px;
+  /* background-color: #fff; */
+  /* box-shadow:0px 0px 10px 10px #ccc; */
+}
+hr{
+  width: 94%;
+}
+.pos{
+  padding-top: 10%;
+  background-color: #fff;
+}
+#sam img{
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+.pos h2{
+  width: 90px;
+  height: 90px;
+  margin-left: 1%;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #687;
+  border-radius:50%;
+  float: left;
+  font-size: 1.75rem;
+}
+.pos h3{
+  width: 50%;
+  margin-left: 3%;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+.pos article h3{
+  margin-bottom: 1%;
+  margin-left: 3%;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+#star h3{
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 3%;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+.pos p{
+  width: 90%;
+  margin-top: 1%;
+  margin-left: 3%;
+  display: flex;
+  align-items: center;
+  font-size: 1.75rem;
+}
+.wrap {
+  display: flex;
+  margin-left: 1%;
+  flex-wrap: nowrap;
+  width: 70%;
+  float: left;
+}
+h3{
+  font-size: 0.7rem;
+}
+#sam{
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#star{
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+#star > h3{
+  color: #ffcc00;
+  font-size: 3rem;
+  /* margin-top: 5%; */
+}
+#star > h3 > p{
+  color: #ff0000;
+  font-size: 2rem;
+  margin: 5%;
+  font-weight: bold;
+}
+#iine{
+  width: 80px;
+  margin-top: 2.5%;
+}
+#menu0{
+  width: 90%;
+  margin-top: 3%;
+}
+#menu0 p{
+  font-weight: bold;
+}
+#date{
+  width: 90%;
+}
+#date p{
+  color: #ccc;
+}
+#output2{
+  height: 500px;
+  width: 500px;
+  background-color: #989468;
+  z-index: 10;
+}
+#main{
+  width: 90%;
+  background-color: #fff;
+  position: absolute;
+  top: 700px;
+  left: 5%;
+  height: 29vh;
+  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6));
+  border-radius: 20px;
+  z-index: 1;
+  background-image: url(../images/frame04.jpg);
+  background-size: cover;
+}
+/*検索**********************************************************************/
+#category {
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  display: grid;
+  grid-template-columns: repeat(15, 10vw);
+  grid-template-rows: repeat(1, 15vw);
+  gap: 7rem;
+  height: 5vh;
+  padding: 5%;
+  padding-bottom: 5%;
+  position: relative;
+  top: 12%;
+}
+#area {
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  display: grid;
+  grid-template-columns: repeat(15, 10vw);
+  grid-template-rows: repeat(1, 15vw);
+  gap: 7rem;
+  height: 5vh;
+  padding: 5%;
+  padding-bottom: 5%;
+  position: relative;
+  top: 15%;
+}
+#ca{
+  position: absolute;
+  top: 7%;
+  left: 6%;
+  font-size: 2rem;
+}
+#Area{
+  position: absolute;
+  top: 43%;
+  left: 6%;
+  font-size: 2rem;
+}
+.category {
+  scroll-snap-align: start;
+  filter: drop-shadow(0px 0px 8px rgba(0,0,0,0.6));
+  background-color: #fff;
+  z-index: 100;
+  width: 160px;
+  height: 110px;
+  border-radius: 20px;
+  padding: 5%;
+}
+.category img{
+  /* scroll-snap-align: start; */
+  /* filter: drop-shadow(0px 0px 8px rgba(0,0,0,0.6)); */
+  background-color: #fff;
+  z-index: 100;
+  width: 160px;
+  height: 110px;
+  border-radius: 20px;
+  /* padding: 5%; */
+}
+
+label img {
+  padding: 6px;
+  z-index: 100;
+  width: 165px;
+  height: 115px;
+  border-radius: 20px;
+  filter: drop-shadow(0px 0px 8px rgba(0,0,0,0.6));
+  margin-top: 20%;
+}
+label p {
+  color: #fff;
+  z-index: 1000;
+  width: 160px;
+  position: relative;
+  top: -60%;
+  left: 10%;
+  font-size: 1.8rem;
+  font-weight: 500;
+  filter: drop-shadow(0px 0px 8px rgba(0,0,0,0.6));
+}
+.ccc input[type="radio"] {
+  display: none;
+}
+.ccc input[type="radio"]:checked + label img {
+  background: orange;
+}
+
+#search{
+  position: absolute;
+  top: 85%;
+  left: 5%;
+  border-radius: 10px;
+  height: 60px;
+  width: 90%;
+  color: #fff;
+  background-color: orange;
+  font-size: 1.5rem;
+}
+/*ここからタブレット********************************************************************************************************/
+@media screen and (min-width:1000px){
+}
+/*ここからPC*************************************************************************************************************/
+@media screen and (min-width:1024px){
+}
